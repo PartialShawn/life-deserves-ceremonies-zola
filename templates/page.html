@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>PAGE TITLE</title>
+    <link type="text/css" rel="stylesheet" href="{# get_theme_url(); #}/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    {% block head %}
+    <title>{{ page.title }} - LDC</title>
+    {% endblock head %}
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <ul id="siteNavigation">
+            PAGE NAVIGATION
+        </ul>
+
+        <a href="{# get_site_url(); #}"><img id="headerImg" alt="{# get_site_name(); #}"
+                src="{# get_theme_url(); #}/ldc_header.jpg" /></a>
+
+        <div id="content">
+
+            <div id="pageChildren" class="pageChildren {# get_page_slug(); #}">{# go_child_menu(); #}</div>
+
+            {% block content %} {% endblock %}
+
+            <div id="footer">
+                <hr />
+                <p>613-206-4818 ~ <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
+            </div>
+        </div> <!-- id content -->
+
+    </div> <!-- id wrapper -->
+
+</body>
+
+</html>
