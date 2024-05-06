@@ -4,6 +4,8 @@ title = "Q&A"
 Q&A
 ===
 
+<a name="qa">anchor</a>
+
 Below you will find the answers to some of the more common questions that I receive about my services. If there is any question that is not addressed please feel free to [contact me](http://shawnsworld.ca/cms/ldc/contact-me/).
 
 *   [How Long is the average wedding?](#qa)
