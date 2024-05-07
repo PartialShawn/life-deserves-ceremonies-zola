@@ -12,9 +12,7 @@
 <body>
     <div id="wrapper">
         <ul id="siteNavigation">
-            {% for page in section.pages %}
-            <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-            {% endfor %}
+            {% block nav %}{% endblock nav%}
         </ul>
 
         <a href="{{ config.base_url }}"><img id="headerImg" alt="Life Deservers Ceremonies"
