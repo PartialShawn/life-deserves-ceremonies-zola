@@ -12,7 +12,9 @@
 <body>
     <div id="wrapper">
         <ul id="siteNavigation">
-            PAGE NAVIGATION
+            {% for page in section.pages %}
+            <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+            {% endfor %}
         </ul>
 
         <a href="{{ config.base_url }}"><img id="headerImg" alt="Life Deservers Ceremonies"
@@ -23,7 +25,6 @@
             <div id="pageChildren" class="pageChildren {# get_page_slug(); #}">{# go_child_menu(); #}</div>
 
             {% block content %}{% endblock %}
-            {{ __tera_context }}
             <div id="footer">
                 <hr />
                 <p>613-206-4818 ~ <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
