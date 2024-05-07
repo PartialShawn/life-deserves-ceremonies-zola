@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <title>PAGE TITLE</title>
-    <link type="text/css" rel="stylesheet" href="{{ config.base_url }}/style.css" />
+    {% block head %}<title>Life Deserves Ceremonies</title>{% endblock head %}
+    <link type="text/css" rel="stylesheet" href="{{ config.base_url | safe }}/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
     {% block head %}
     {% endblock head %}
@@ -12,14 +12,16 @@
 <body>
     <div id="wrapper">
         <ul id="siteNavigation">{% block nav %}
-            <li><a href="{{ config.base_url }}/services/">Services</a></li>
-            <li><a href="{{ config.base_url }}/contact-me/">Contact Me</a></li>
-            <li><a href="{{ config.base_url }}/qa/">Q&amp;A</a></li>
-            <li><a href="{{ config.base_url }}/about-me/">About Me</a></li>
+            <li><a href="{{ config.base_url | safe }}/">Home</a></li>
+            <li><a href="{{ config.base_url | safe }}/about-me/">About Me</a></li>
+            <li><a href="{{ config.base_url | safe }}/services/">Services</a></li>
+            <li>Photo Gallery</li>
+            <li><a href="{{ config.base_url | safe }}/contact-me/">Contact Me</a></li>
+            <li><a href="{{ config.base_url | safe }}/qa/">Q&amp;A</a></li>
         {% endblock nav%}</ul>
 
-        <a href="{{ config.base_url }}"><img id="headerImg" alt="Life Deservers Ceremonies"
-                src="{{ config.base_url }}/ldc_header.jpg" /></a>
+        <a href="{{ config.base_url | safe }}"><img id="headerImg" alt="Life Deservers Ceremonies"
+                src="{{ config.base_url | safe }}/ldc_header.jpg" /></a>
 
         <div id="content">
 
