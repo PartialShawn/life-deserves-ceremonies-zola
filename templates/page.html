@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block head %}
+<title>{{ page.title }} - LDC</title>
+{% endblock head %}
+
+
 {% block content %}
 {{ page.content | safe }}
 {% endblock content %}
