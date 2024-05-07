@@ -16,14 +16,14 @@
         </ul>
 
         <a href="{{ config.base_url }}"><img id="headerImg" alt="Life Deservers Ceremonies"
-                src="{{ get_url(path="css/app.css") }}/ldc_header.jpg" /></a>
+                src="{{ config.base_url }}/ldc_header.jpg" /></a>
 
         <div id="content">
 
             <div id="pageChildren" class="pageChildren {# get_page_slug(); #}">{# go_child_menu(); #}</div>
 
             {% block content %}{% endblock %}
-
+            {{ __tera_context }}
             <div id="footer">
                 <hr />
                 <p>613-206-4818 ~ <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
