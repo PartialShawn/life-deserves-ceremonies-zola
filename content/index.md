@@ -1,3 +1,6 @@
++++
+title = ""
++++
 <p style="text-align: center;"><strong>Suzanne Peters&nbsp;—&nbsp;Humanist Officiant for the Perth</strong></p>
 
 My name is Suzanne Peters. If you are looking for an Officiant (sometimes called ministers, clergy or preachers) to preside over any ceremony I would love to work with you to make a custom celebration with you and your loved ones. From weddings to anniversaries, from child namings to funerals, I will work with you to develop your own unique ceremony that is nonreligious and will reflect who you are.
