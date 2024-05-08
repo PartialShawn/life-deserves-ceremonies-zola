@@ -2,10 +2,12 @@
 <html lang="en-CA">
 
 <head>
+
     <link rel="stylesheet" href="{{ config.base_url | safe }}/style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
     {% endblock head %}
     {% block head_title %}<title>Life Deserves Ceremonies</title>{% endblock head_title %}
@@ -20,7 +22,7 @@
             <li>Photo Gallery</li>
             <li><a href="{{ config.base_url | safe }}/contact-me/">Contact Me</a></li>
             <li><a href="{{ config.base_url | safe }}/qa/">Q&amp;A</a></li>
-        {% endblock nav%}</ul>
+        {% endblock nav %}</ul>
 
         <a href="{{ config.base_url | safe }}"><img id="headerImg" alt="Life Deservers Ceremonies"
                 src="{{ config.base_url | safe }}/ldc_header.jpg" width="901" height="203" /></a>
