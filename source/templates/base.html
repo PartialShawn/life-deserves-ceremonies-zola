@@ -30,12 +30,17 @@
                 src="{{ config.base_url | safe }}/ldc_header.jpg" /></a>
     </header>
     <main>
-        <nav>{# go_child_menu(); #}</nav>
+        <nav>
+
+            {% for page in section.pages %}
+            <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+            {% endfor %}
+        </nav>
 
         {% block content %}{% endblock %}
         
     </main>
-    
+    {{ __tera_context }}
     <footer>
         <p>613-206-4818 ~ <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
     </footer>
