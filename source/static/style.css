@@ -2,18 +2,20 @@
     --ldc-green: rgb(34, 74, 16);
 }
 
+header {
+    max-width: 901px;
+    margin: 0 auto;
+}
 
 header nav img {
     border-radius: 50px 50px 0px 0px;
     max-width: 901px;
-    height: auto;
-    width: auto;
 }
 
 
 main {
-    width: 901px;
-    margin: 0 auto 0 auto;
+    max-width: 901px;
+    margin: 0 auto;
     font-size: large;
     line-height: 150%;
     color: rgb(34, 74, 16);
@@ -42,15 +44,19 @@ header nav ul {
 }
 
 header nav li {
+    border-right: solid 1px black;
     display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header nav li:last-of-type {
+    border-right: none;
 }
 
 header nav a:any-link {
-    border-right: solid 1px black;
     text-decoration: none;
     color: black;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 
