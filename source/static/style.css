@@ -1,77 +1,19 @@
-a:link,
-a:visited {
-    color: rgb(60, 84, 157);
-}
-
-div#wrapper {
-    width: 900px;
-    margin: 0 auto 0 auto;
-}
-
-ul#siteNavigation {
-    text-align: right;
-}
-
-ul#siteNavigation li {
-    display: inline;
-}
-
-ul#siteNavigation a {
-    border-right: solid 1px black;
-    text-decoration: none;
-    color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-li.current {
-    font-weight: bold;
+:root {
+    --ldc-green: rgb(34, 74, 16);
 }
 
 
-div#pageChildren {
-    float: right;
-    padding: 5px;
-    margin-left: 1em;
-    border: dotted 2px white;
-    background-color: rgb(34, 74, 16);
-}
-
-div.pageChildren {
-    display: none;
-}
-
-p#parent {
-    border-bottom: solid 1px white;
-    font-weight: bold;
-}
-
-div.services,
-div.child-ceremonies,
-div.milestone-ceremonies {
-    display: block;
-}
-
-div#pageChildren a:link,
-div#pageChildren a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-div#pageChildren p {
-    margin: 0px;
-    padding: 0px;
-}
-
-
-img#headerImg {
+header nav img {
     border-radius: 50px 50px 0px 0px;
-    -moz-border-radius: 50px 50px 0px 0px;
-    -khtml-border-radius: 50px 50px 0px 0px;
-    -webkit-border-radius: 50px 50px 0px 0px;
+    max-width: 901px;
+    height: auto;
+    width: auto;
 }
 
-div#content {
+
+main {
+    width: 901px;
+    margin: 0 auto 0 auto;
     font-size: large;
     line-height: 150%;
     color: rgb(34, 74, 16);
@@ -79,20 +21,69 @@ div#content {
     text-align: left;
 }
 
-div#footer {
+footer {
     font-size: medium;
     text-align: right;
     clear: both;
+    border-top: 3px solid var(--ldc-green);
 }
+
+
+
+
+
+a:any-link {
+    color: rgb(60, 84, 157);
+}
+
+
+header nav ul {
+    text-align: right;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav a:any-link {
+    border-right: solid 1px black;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+main nav {
+    float: right;
+    padding: 5px;
+    margin-left: 1em;
+    border: dotted 2px white;
+    background-color: rgb(34, 74, 16);
+}
+
+
+
+
+main nav a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+main nav p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 h1 {
     font-family: Satisfy;
     font-weight: normal;
 }
 
-h1.index {
-    display: none;
-}
+
 
 div#faq-header {
     border-bottom: solid 1px black;
@@ -111,13 +102,12 @@ div.faq-question {
     margin-top: 0em;
 }
 
-div.faq-answer {}
 
-span.faq-back-to-top {
-    display: block;
-    font-size: smaller;
-    text-align: right;
-}
+
+
+
+
+
 
 div.field {
     margin-top: 1em;
