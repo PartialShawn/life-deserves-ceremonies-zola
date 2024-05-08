@@ -4,7 +4,7 @@ title = "About Me"
 About Me
 ========
 
-![Picture of Suzanne Peters](/images/suzannepeters1.jpg)You are probably preparing for a special time in your life. I want to help you, your family and friends mark that with a special and unique ceremony.
+![Picture of Suzanne Peters](@/suzannepeters1.jpg)You are probably preparing for a special time in your life. I want to help you, your family and friends mark that with a special and unique ceremony.
 
 In my twenty years in human services, I've devoted myself to making a positive difference for people, families and the community.
 
