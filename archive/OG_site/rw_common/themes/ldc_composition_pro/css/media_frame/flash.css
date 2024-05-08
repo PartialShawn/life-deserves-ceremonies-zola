@@ -1,0 +1,8 @@
+#pageHeader {
+	display: none;
+}
+
+#flashHeader {
+	display: block;
+	margin: 5px 0 0;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>BannerZest - Simple SlideShow</title>
+	<!-- BannerZest - v3993 -->
+	<link href="http://bannerzest.com/webpreview/webpreview.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		function copy(text2copy) {
+			if (window.clipboardData) { window.clipboardData.setData("Text",text2copy); } else {
+				var flashcopier = 'flashcopier';
+				if (!document.getElementById(flashcopier)) {
+					var divholder = document.createElement('div');
+					divholder.id = flashcopier;
+					document.body.appendChild(divholder);
+				}
+				document.getElementById(flashcopier).innerHTML = '';
+				var divinfo = '<embed src="clipboard.swf" FlashVars="clipboard='+escape(text2copy)+'" width="0" height="0" type="application/x-shockwave-flash" />';
+				document.getElementById(flashcopier).innerHTML = divinfo;
+			}
+		}
+		function showBoxMessage(element) { element.style.display = ''; delayedHideMessage(element); }
+		function delayedHideMessage(element) { timeoutID = window.setTimeout(function() {hideMessage(element)}, 1000); }
+		function hideMessage(element) { element.style.display = 'none'; }
+		function clearAlert() { window.clearTimeout(timeoutID); }
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="http://www.aquafadas.com"><span id="aqualogo"></span></a>
+		<div id="logo"></div>
+	</div>
+	<div id="banner">
+		<script type="text/javascript">
+			var _urlBZ9014030809694CD19F77 = document.URL.substring( 0, document.URL.length-7);
+		</script>
+		
+		<noscript><p style="background-color:#ffffff;color:#000000;padding:1em;">Your browser doesn't support JavaScript or you have disabled JavaScript.</p></noscript>
+		<script type="text/javascript" src="bzLoader.js"></script>
+
+		<script type="text/javascript">
+			if( swfobject ) {
+				swfobject.addDomLoadEvent(function() {				
+					var htmlCodeTextArea = document.getElementById( "htmlCode" );
+					var htmlBlogCodeTextArea = document.getElementById( "htmlBlogCode" );
+					var htmlCode = "<noscript><p style=\'background-color:#ffffff;color:#000000;padding:1em;\'>Your browser doesn\'t support JavaScript or you have disabled JavaScript.</p></noscript>";
+					htmlCode +=	"<script type='text/javascript' ";
+					htmlCode += "src='" + _urlBZ9014030809694CD19F77 + "bzLoader.js'><\/script>";
+					htmlCode += "<div id='SWBZ9014030809694CD19F77'><\/div>";
+					htmlCode += "<div id='LKBZ9014030809694CD19F77'><\/div>";
+					htmlCodeTextArea.value = htmlCode;
+					htmlBlogCodeTextArea.value = htmlCode;
+					var htmlCodeTextAreaWJS = document.getElementById( "htmlCodeWithoutJS" );
+					var htmlCode = '<object type="application/x-shockwave-flash" width="900" height="200" id="BZ9014030809694CD19F77"';
+					htmlCode += 'data="'+_urlBZ9014030809694CD19F77+'/bzAnimation.swf?swfId=BZ9014030809694CD19F77&xmlPath='+_urlBZ9014030809694CD19F77+'/';
+					htmlCode += 'bz.xml&'+_urlBZ9014030809694CD19F77+'imgPath=bzImgURL&urlType=bzTarget&showInfo=bzShowInfo&themeMode=2">';
+					htmlCode += '<param name="movie" value="'+_urlBZ9014030809694CD19F77+'/bzAnimation.swf?swfId=BZ9014030809694CD19F77&xmlPath='+_urlBZ9014030809694CD19F77+'/';
+					htmlCode += 'bz.xml&'+_urlBZ9014030809694CD19F77+'imgPath=bzImgURL&urlType=bzTarget&showInfo=bzShowInfo&themeMode=2" \/>';
+					htmlCode += '<param name="allowScriptAccess" value="always"><\/param><param name="wmode" value="transparent"><\/param><\/object>'
+					htmlCodeTextAreaWJS.value = htmlCode;
+
+				});
+			}
+		</script>
+
+<noscript><p style="background-color:#ffffff;color:#000000;padding:1em;">Your browser doesn't support JavaScript or you have disabled JavaScript.</p></noscript><div id="SWBZ9014030809694CD19F77"></div><div id="LKBZ9014030809694CD19F77"></div>
+
+	</div>
+	<div id="code">
+		<h3>Copy code to integrate this banner on your websites</h3>
+	<hr />
+	<p>
+		<a href="http://aquafadas.eu/wiki/BannerZest:iWeb" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/iweb.png" alt="iWeb" /></a><a href="http://aquafadas.eu/wiki/BannerZest:RapidWeaver" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/rapidweaver.png" alt="Rapidweaver" /></a><a href="http://aquafadas.eu/wiki/BannerZest:Sandvox" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/sandvox.png" alt="Sandvox" /></a><a href="http://aquafadas.eu/wiki/BannerZest:Freeway" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/freeway.png" alt="Freeway" /></a><a href="http://aquafadas.eu/wiki/BannerZest:Dreamweaver" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/dreamweaver.png" alt="Dreamweaver" /></a>
+	</p>
+	<p>
+		<label>HTML code (with javascript):</label>
+	</p>
+	<p>
+		<textarea id="htmlCode" rows="2" cols="20"></textarea>
+		<span class="copy" onclick="copy(document.getElementById('htmlCode').value); showBoxMessage(document.getElementById('box-html-code'));">Copy</span>
+		<span class="box" id="box-html-code" style="display:none;">Code copied to clipboard</span>
+	</p>
+	<p>This is the recommended way to include a banner in a website. It will gracefully handle a version of the Flash player that is too old or missing.</p>	<hr />
+	<p>
+		<a href="http://aquafadas.eu/wiki/BannerZest:Dotclear" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/dotclear.png" alt="Dotclear" /></a><a href="http://aquafadas.eu/wiki/BannerZest:Wordpress" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/wordpress.jpg" alt="Wordpress" /></a>
+	</p>
+	<p>
+		<label>HTML code (with javascript):</label>
+	</p>
+	<p>
+		<textarea id="htmlBlogCode" rows="2" cols="20"></textarea>
+		<span class="copy" onclick="copy(document.getElementById('htmlBlogCode').value); showBoxMessage(document.getElementById('box-html-blog-code'));">Copy</span>
+		<span class="box" id="box-html-blog-code" style="display:none;">Code copied to clipboard</span>
+	</p>	<hr />
+	<p>
+		<a href="http://aquafadas.eu/wiki/BannerZest:Facebook" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/facebook.jpg" alt="Facebook" /></a><a href="http://aquafadas.eu/wiki/BannerZest:Myspace" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/myspace.jpg" alt="Myspace" /></a><a href="http://aquafadas.eu/wiki/BannerZest:Blogger" target="_blank"><img src="http://bannerzest.com/webpreview/Resources/blogger.jpg" alt="Blogger" /></a>
+	</p>
+	<p>
+		<label>HTML code (without Javascript):</label>
+	</p>
+	<p>
+		<textarea id="htmlCodeWithoutJS" rows="2" cols="20"></textarea>
+		<span onclick="copy(document.getElementById('htmlCodeWithoutJS').value); showBoxMessage(document.getElementById('box-html-code-without-js'));" class="copy">Copy</span>
+		<span class="box" id="box-html-code-without-js" style="display:none;">Code copied to clipboard</span>
+	</p>
+	<hr />
+	<p></p>
+	</div>
+</body>
+</html>

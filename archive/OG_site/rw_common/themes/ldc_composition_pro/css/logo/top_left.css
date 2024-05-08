@@ -1,0 +1,8 @@
+#logoLeft {
+	position: absolute;
+	display: block;
+	top: 15px;
+	left: 15px;
+	z-index: 50;
+	border: none;
+}

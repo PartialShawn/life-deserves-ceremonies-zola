@@ -1,0 +1,11 @@
+#pageHeader {
+	height: 85px;
+}
+
+#pageHeader h1, #pageHeader h2 {
+	display: none;
+}
+
+#flashHeader {
+	height: 100px;
+}

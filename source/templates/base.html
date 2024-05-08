@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <link rel="stylesheet" href="{{ config.base_url | safe }}/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+    {% block head %}
+    {% endblock head %}
+    {% block head_title %}<title>Life Deserves Ceremonies</title>{% endblock head_title %}
+</head>
+
+<body>
+    <div id="wrapper">
+        <ul id="siteNavigation">{% block nav %}
+            <li><a href="{{ config.base_url | safe }}/">Home</a></li>
+            <li><a href="{{ config.base_url | safe }}/about-me/">About Me</a></li>
+            <li><a href="{{ config.base_url | safe }}/services/">Services</a></li>
+            <li>Photo Gallery</li>
+            <li><a href="{{ config.base_url | safe }}/contact-me/">Contact Me</a></li>
+            <li><a href="{{ config.base_url | safe }}/qa/">Q&amp;A</a></li>
+        {% endblock nav%}</ul>
+
+        <a href="{{ config.base_url | safe }}"><img id="headerImg" alt="Life Deservers Ceremonies"
+                src="{{ config.base_url | safe }}/ldc_header.jpg" width="901" height="203" /></a>
+
+        <div id="content">
+
+            <div id="pageChildren" class="pageChildren {# get_page_slug(); #}">{# go_child_menu(); #}</div>
+
+            {% block content %}{% endblock %}
+            <div id="footer">
+                <hr />
+                <p>613-206-4818 ~ <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
+            </div>
+        </div> <!-- id content -->
+
+    </div> <!-- id wrapper -->
+
+</body>
+
+</html>

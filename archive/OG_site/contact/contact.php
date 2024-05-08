@@ -1,0 +1,240 @@
+<?php
+	//start session
+	session_start();
+	
+	//set a key, checked in mailer, prevents against spammers trying to hijack the mailer.
+	$security_token = $_SESSION['security_token'] = uniqid(rand());
+	
+	if(!isset($_SESSION['formMessage'])) $_SESSION['formMessage'] = 'Thank you for your interest in my services. Please fill out the form below and I will contact you as soon as possible.';
+	if(!isset($_SESSION['formFooter'])) $_SESSION['formFooter'] = '';
+	
+	if(!isset($_SESSION['form'])) $_SESSION['form'] = array();
+	
+	function check($field, $type = "", $value = "") {
+		$string = "";
+		if(isset($_SESSION['form'][$field])) {
+			switch($type) {
+				case "checkbox":
+					$string = 'checked="checked"';
+					break;
+				case "radio":
+					if($_SESSION['form'][$field] == $value) $string = 'checked="checked"';
+					break;
+				case "select":
+					if($_SESSION['form'][$field] == $value) $string = 'selected="selected"';
+					break;
+				default:
+					$string = $_SESSION['form'][$field];
+			}
+		}
+		return $string;
+	}
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="Title" content="Life Deserves Ceremonies Contact page" />
+		<meta name="Content" content="wedding ceremonies" />
+		<meta name="content" content="wedding officiant" />
+		<meta name="keyword" content="officiant" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="all" />
+		<meta name="generator" content="RapidWeaver" />
+		
+		<title>LDC Contact</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/styles.css"  />
+		<link rel="stylesheet" type="text/css" media="print" href="../rw_common/themes/ldc_composition_pro/stylesheets/print.css"  />
+		<link rel="stylesheet" type="text/css" media="handheld" href="../rw_common/themes/ldc_composition_pro/stylesheets/handheld.css"  />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/colourtag-ldc-composition-pro-theme-style.css"  />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/header_font/lucida_grande.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/content_font/lucida_grande.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/text_size/80.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/line_height/1_50em.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/logo/top_right.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/navigation_alignment/right.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/header_alignment/left.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/media_frame/canvas1.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/media_frame_height/200px.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/sidebar/sidebar_hide.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/width/width_900.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/ldc_composition_pro/css/advanced/last_published.css" />
+		
+		
+		<script type="text/javascript" src="../rw_common/themes/ldc_composition_pro/javascript.js"></script>
+		<script type="text/javascript" src="../rw_common/themes/ldc_composition_pro/scripts/rounded_corners_lite-YH.inc.js"></script>
+		<script type="text/JavaScript">
+			window.onload = function()
+			{
+			settings = {
+			tl: { radius: 15 },
+			tr: { radius: 15 },
+			bl: { radius: 0 },
+			br: { radius: 0 },
+			antiAlias: true,
+			autoPad: true
+			}
+			settings2 = {
+			tl: { radius: 0 },
+			tr: { radius: 0 },
+			bl: { radius: 15 },
+			br: { radius: 15 },
+			antiAlias: true,
+			autoPad: false
+			}
+			settings3 = {
+			tl: { radius: 15 },
+			tr: { radius: 15 },
+			bl: { radius: 15 },
+			br: { radius: 15 },
+			antiAlias: true,
+			autoPad: false
+			}
+			settings4 = {
+			tl: { radius: 15 },
+			tr: { radius: 15 },
+			bl: { radius: 0 },
+			br: { radius: 0 },
+			antiAlias: true,
+			autoPad: true
+			}
+			settings5 = {
+			tl: { radius: 0 },
+			tr: { radius: 0 },
+			bl: { radius: 15 },
+			br: { radius: 15 },
+			antiAlias: true,
+			autoPad: true
+			}
+			var divObj = document.getElementById("pageHeader");
+			cornersObj = new curvyCorners(settings, divObj);
+			cornersObj.applyCornersToAll();
+			var divObj2 = document.getElementById("footerContainer");
+			cornersObj = new curvyCorners(settings2, divObj2);
+			cornersObj.applyCornersToAll();
+			var divObj2 = document.getElementById("navOuter");
+			cornersObj = new curvyCorners(settings3, divObj2);
+			cornersObj.applyCornersToAll();
+			var divObj2 = document.getElementById("sideTitleOuter");
+			cornersObj = new curvyCorners(settings4, divObj2);
+			cornersObj.applyCornersToAll();
+			var divObj2 = document.getElementById("sidebarBodyOuter");
+			cornersObj = new curvyCorners(settings5, divObj2);
+			cornersObj.applyCornersToAll();
+			}
+		</script>
+
+		<script type="text/javascript" charset="utf-8">
+			var blankSrc = "../rw_common/themes/ldc_composition_pro/scripts/blank.gif";
+		</script>	
+		<style type="text/css">
+
+		img {
+			behavior:	url("../rw_common/themes/ldc_composition_pro/scripts/pngbehavior.htc");
+		}
+
+		</style>
+
+		
+		
+		
+	</head>
+	<body>
+		<div id="logoLeft"><a href="http://www.lifedeservesceremonies.com/"></a></div>
+		<div id="logoRight"><a href="http://www.lifedeservesceremonies.com/"></a></div>
+		<div id="border">	<!-- Start Border Wrapper -->
+			<div id="primaryNavigation">
+				<ul><li><a href="../" rel="self">LDC Home</a></li><li><a href="../about/about.html" rel="self">About Me</a></li><li><a href="../services/services.html" rel="self">Services</a></li><li><a href="../PG/photos.html" rel="self">Photo Gallery</a></li><li><a href="contact.php" rel="self" class="current">LDC Contact</a></li><li><a href="../FAQ/FAQ.html" rel="self">FAQ's</a></li><li><a href="../search/search.html" rel="self">LDC Search</a></li><li><a href="../page8/page8.html" rel="self">LDC Blog</a></li></ul>
+			</div>
+			<div class="clearer"></div>
+			<div id="flashHeader"> <!-- INSERT CUSTOM FLASH HERE -->
+				<noscript>
+					<p style='background-color:#ffffff;color:#000000;padding:1em;'>Your browser doesn't support JavaScript or you have disabled JavaScript.</p>
+				</noscript>
+				<script type='text/javascript' src='../rw_common/themes/ldc_composition_pro/flash/bzLoader.js'></script>
+				<div id='SWBZ9014030809694CD19F77'></div>
+				<div id='LKBZ9014030809694CD19F77'></div>
+			</div> <!-- END OF FLASH CODE CONTAINER -->
+			<div id="pageHeader">	<!-- Start Page Header -->
+				<div id="headerLogo"><a href="http://www.lifedeservesceremonies.com/"></a></div>
+				<h1><a href="http://www.lifedeservesceremonies.com/"></a></h1>	<!-- This is the Title -->
+				<h2></h2>	<!-- This is the Slogan -->
+			</div>	<!-- Ends Title Area -->
+		</div>	<!-- End Page Header -->
+		<div id="container">	<!-- Start Main Content -->
+			<div id="contentContainer">	<!-- Start main content -->
+				<div id="sidebarContainer">	<!-- Start Sidebar -->
+					<div class="sidebarSpacer"></div>
+					<div id="navOuter">	<!-- Start Rounded Corners -->
+						<div id="verticalNavigation">	<!-- Start Navigation -->
+							<ul><li><a href="../" rel="self">LDC Home</a></li><li><a href="../about/about.html" rel="self">About Me</a></li><li><a href="../services/services.html" rel="self">Services</a></li><li><a href="../PG/photos.html" rel="self">Photo Gallery</a></li><li><a href="contact.php" rel="self" class="current">LDC Contact</a></li><li><a href="../FAQ/FAQ.html" rel="self">FAQ's</a></li><li><a href="../search/search.html" rel="self">LDC Search</a></li><li><a href="../page8/page8.html" rel="self">LDC Blog</a></li></ul>
+						</div>	<!-- End Navigation -->
+						<div id="sidebarLogo"><a href="http://www.lifedeservesceremonies.com/"></a></div>
+					</div>	<!-- End Rounded Corners -->
+					<div class="spacer2"></div>
+					<div id="sideTitleOuter">	<!-- Start Rounded Corners -->
+						<div class="sideHeader"></div>	<!-- Sidebar title entered in page inspector-->
+					</div>	<!-- End Rounded Corners -->
+					<div id="sidebarBodyOuter">	<!-- Start Rounded Corners -->
+						<div id="sidebar">	<!-- Start sidebar content -->
+							 <!-- Sidebar content entered in page inspector -->
+							<br />
+							 <!-- Sidebar ontent such as the blog archive links -->
+						</div>	<!-- End sidebar content -->
+					</div>	<!-- End Rounded Corners -->
+				</div>	<!-- End Sidebar -->
+				<div id="content">	<!-- Start content -->
+					
+<div class="message-text"><?php echo $_SESSION['formMessage']; unset($_SESSION['formMessage']); ?></div><br />
+
+<form action="./files/mailer.php" method="post" enctype="multipart/form-data">
+	 <div>
+		<label>Your Name:</label> *<br />
+		<input class="form-input-field" type="text" value="<?php echo check('element0'); ?>" name="form[element0]" size="40"/><br /><br />
+
+		<label>Your Email:</label> *<br />
+		<input class="form-input-field" type="text" value="<?php echo check('element1'); ?>" name="form[element1]" size="40"/><br /><br />
+
+		<label>Subject:</label> *<br />
+		<input class="form-input-field" type="text" value="<?php echo check('element2'); ?>" name="form[element2]" size="40"/><br /><br />
+
+		<label>Message:</label> *<br />
+		<textarea class="form-input-field" name="form[element3]" rows="8" cols="38"><?php echo check('element3'); ?></textarea><br /><br />
+
+		<div style="display: none;">
+			<label>Spam Protection: Please don't fill this in:</label>
+			<textarea name="comment" rows="1" cols="1"></textarea>
+		</div>
+		<input type="hidden" name="form_token" value="<?php echo $security_token; ?>" />
+		<input class="form-input-button" type="reset" name="resetButton" value="Reset" />
+		<input class="form-input-button" type="submit" name="submitButton" value="Submit" />
+	</div>
+</form>
+
+<br />
+<div class="form-footer"><?php echo $_SESSION['formFooter']; unset($_SESSION['formFooter']); ?></div><br />
+
+<?php unset($_SESSION['form']); ?>
+				</div>	<!-- End content -->
+			</div>	<!-- End main content -->
+			<div class="clearer"></div>
+			<div id="footerContainer">
+				<div id="footerWrapper">
+					<div id="breadcrumbcontainer"><!-- Start the breadcrumb wrapper -->
+						<ul><li>&nbsp;&gt;&nbsp;<a href="../">LDC Home</a></li><li>&nbsp;&gt;&nbsp;<a href="contact.php">LDC Contact</a></li></ul>
+						<br />
+				<!-- Use this space for HTML links to your site privacy policies and sitemap links -->
+					</div><!-- End breadcrumb -->
+					<div id="footer">
+						1087 Honey Harbour Road, Port Severn, ON, L0K 1S0 ~ 705-770-4818 <a href="#" id="rw_email_contact">~ email </a><script type="text/javascript">var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":su";var _rwObsfuscatedHref3 = "zan";var _rwObsfuscatedHref4 = "ne@";var _rwObsfuscatedHref5 = "lif";var _rwObsfuscatedHref6 = "ede";var _rwObsfuscatedHref7 = "ser";var _rwObsfuscatedHref8 = "ves";var _rwObsfuscatedHref9 = "cer";var _rwObsfuscatedHref10 = "emo";var _rwObsfuscatedHref11 = "nie";var _rwObsfuscatedHref12 = "s.c";var _rwObsfuscatedHref13 = "om";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7+_rwObsfuscatedHref8+_rwObsfuscatedHref9+_rwObsfuscatedHref10+_rwObsfuscatedHref11+_rwObsfuscatedHref12+_rwObsfuscatedHref13; document.getElementById('rw_email_contact').href = _rwObsfuscatedHref;</script>
+						<br />
+						<div id="lastPublished">Last Updated: 				
+<?php
+  echo date( "F d Y h:i", getlastmod() );
+?>
+						</div>
+					</div><!-- End Footer -->
+					<div class="clearer"></div>
+				</div><!-- End of Footer wrapper -->
+			</div><!-- End footer container -->
+		</div><!-- End content container -->
+	</body>
+</html>

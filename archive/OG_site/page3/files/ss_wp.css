@@ -1,0 +1,38 @@
+/* SpiffY!Search style for WordPress default.css */
+
+/* fonts, sizes, outlines */
+#ss, #ss_a dd { width:100%; font: 132% 'Lucida Grande', Verdana, Arial, Sans-Serif; background-color:#fff; border:1px solid gray;}
+
+/* this was the only way I could deal with WP's default style, sorry! 
+#sidebar #ss input#ss_q {width:175px!important; } */
+
+/* I'm using B tags for my mouse-over autofill; delete this if you're not */
+b { font-weight:normal; background-color:#ffc; }
+
+/* to attach details to right side, use right instead of left */
+#ss_a dd { margin:0; padding:3px; position:absolute; left:5px; background:#ffe; overflow:hidden; font-size:100%;}
+
+/* all links look like links: */
+#ss a { text-decoration:none; cursor:pointer;}
+
+/* careful when messing with the rest of this! */
+#ss, #ss_d { position:relative;}
+#ss a:hover { text-decoration:underline;}
+#ss_d { border:none; position:absolute; top:4px; right:5px;}
+#ss_r { position:absolute; top:4px; left:87px;}
+#ss_q { background-color:#ffc; margin:25px 5px 5px 5px;}
+#ss_a  { position: relative; margin:0 5px 5px 5px; padding:0;}
+#ss a { margin-bottom:0;}
+#ss_a h4 { margin:0 0 3px 0; padding:0; font-size:100%;}
+#ss_a dd p {color:#00a; margin:3px 0 0 0; padding:0; text-align:center;  font-size:100%;}
+#ss_a dt { padding:0; margin:0; position:relative; width:100%; height:1.2em; white-space:nowrap; overflow: hidden;}
+#ss_a dt.odd { background-color:#eef;}
+#ss_a dt a.resultTitle { position:absolute; left:20px;}
+#ss_a dt a.addToMyWeb { display:block; float:left; height:15px; width:15px; background: transparent url(http://us.i1.yimg.com/us.yimg.com/i/us/my/bn/cust_addcontent.gif) 0 3px no-repeat; }
+#ss_n { margin-top:5px; background:#00a; text-align:center; }
+#ss p#ss_u { margin:5px; overflow:hidden;}
+a#ss_nx { position:absolute; bottom:0; right: 3px; color:#ff0; font-weight:bold;}
+a#ss_pr { position:absolute; bottom:0; left: 3px; color:#ff0; font-weight:bold;}
+a#ss_yh { color:#ff0; }
+#ss a.yahooSearch, a.yahooNews { position:absolute; height:20px; width:90px; background: url(http://us.i1.yimg.com/us.yimg.com/i/ws/w2/search.gif) 5px 5px no-repeat; }
+#ss a.yahooNews { background: url(http://us.i1.yimg.com/us.yimg.com/i/ws/w2/news.gif) 6px 5px no-repeat; }

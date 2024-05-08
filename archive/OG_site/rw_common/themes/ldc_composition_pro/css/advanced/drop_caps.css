@@ -1,0 +1,10 @@
+p:first-letter {
+	font-size: 5em;
+	line-height: 0.50em;
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-style: normal;
+	float: left;
+}

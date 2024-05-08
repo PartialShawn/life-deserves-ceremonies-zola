@@ -1,0 +1,364 @@
+/** Copyright 2005 Google Inc. All rights reserved. */
+
+
+/* CONTAINER */
+
+.rapidSearch{ padding: 20px 0; }
+
+/* SEARCH FORM */
+
+form.gsc-search-box {
+  font-size: 13px;
+  margin-top : 0px;
+  margin-right : 0px;
+  margin-bottom : 4px;
+  margin-left : 0px;
+  width: 100%;
+}
+
+table.gsc-search-box {
+  border-style : none;
+  border-width : 0px;
+  border-spacing : 0px 0px;
+  width : 100%;
+  margin-bottom : 2px;
+}
+
+table.gsc-search-box td {
+  vertical-align : middle;
+}
+
+table.gsc-search-box td.gsc-input {
+  padding-right : 2px;
+}
+
+td.gsc-search-button {
+  width : 1%;
+}
+
+td.gsc-clear-button {
+  width : 14px;
+}
+
+table.gsc-branding td,
+table.gsc-branding {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border : none;
+}
+
+table.gsc-branding {
+  border-style : none;
+  border-width : 0px;
+  border-spacing : 0px 0px;
+  width : 100%;
+}
+
+.gsc-branding-text {
+  color : #676767;
+}
+
+td.gsc-branding-text {
+  vertical-align : top;
+}
+
+td.gsc-branding-text div.gsc-branding-text {
+  padding-bottom : 2px;
+  text-align : right;
+  font-size : 11px;
+  margin-right : 2px;
+}
+
+td.gsc-branding-img {
+  width : 65px;
+  vertical-align : bottom;
+}
+
+div.gsc-branding-img,
+div.gsc-branding-img-noclear,
+img.gsc-branding-img,
+img.gsc-branding-img-noclear {
+  padding-top : 1px;
+}
+
+img.gsc-branding-img,
+img.gsc-branding-img-noclear {
+  margin : 0 0 0 0;
+  padding-right : 0;
+  padding-left : 0;
+  padding-bottom : 0;
+  border : none;
+  display : inline;
+}
+
+input.gsc-search-button {
+  margin-left : 2px;
+}
+
+div.gsc-clear-button {
+  display : inline;
+  text-align : right;
+  margin-left : 4px;
+  margin-right : 4px;
+  padding-left : 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('icon_refresh.gif');
+  cursor : pointer;
+}
+
+input.gsc-input {
+  padding-left : 2px;
+  border-style : solid;
+  border-width : 1px;
+  border-color : #BCCDF0;
+  width : 99%;
+}
+
+
+/* SEARCH RESULTS */
+
+.gsc-resultsHeader {
+  width : 99%;
+  border-bottom : 1px solid #e9e9e9;
+  margin-bottom : 4px;
+}
+
+.gsc-resultsHeader td.gsc-twiddleRegionCell{
+  width: 75%;
+}
+
+.gsc-resultsHeader td.gsc-configLabelCell{
+  text-align: right;
+  width: 75%;
+}
+
+.gsc-resultsHeader .gsc-twiddle{
+  margin-top: 4px;
+  display: inline;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
+}
+.gsc-resultsHeader td.gsc-twiddle-closed div.gsc-twiddle{
+  background-image: url('icon_arrow_close.gif');
+}
+.gsc-resultsHeader td.gsc-twiddle-opened div.gsc-twiddle{
+  background-image: url('icon_arrow_open.gif');
+}
+
+.gsc-resultsHeader .gsc-title{
+  color: #676767;
+  margin-right: 10px;
+  padding-left: 14px;
+  display: inline;
+}
+
+.gsc-resultsHeader .gsc-stats {
+  color: #676767;
+  font-size: 11px;
+  font-weight: normal;
+  display : inline;
+}
+
+.gsc-resultsHeader td.gsc-twiddle-opened .gsc-stats {
+  display : none;
+}
+
+.gsc-results-selector {
+  display : inline;
+}
+
+.gsc-resultsHeader td.gsc-twiddle-closed .gsc-results-selector {
+  display : none;
+}
+
+.gsc-result-selector {
+  cursor : pointer;
+  display : inline;
+  font-size : 13px;
+  padding-left : 13px;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.gsc-one-result {
+  background-image: url('icon_one-complex-dark.gif');
+}
+
+.gsc-more-results {
+  background-image: url('icon_more-complex-dark.gif');
+}
+
+.gsc-all-results {
+  background-image: url('icon_all-complex-dark.gif');
+  padding-right : 1px;
+}
+
+.gsc-one-result-active .gsc-one-result {
+  background-image: url('icon_one-complex-light-blue.gif');
+}
+
+.gsc-more-results-active .gsc-more-results {
+  background-image: url('icon_more-complex-light-blue.gif');
+}
+
+.gsc-all-results-active .gsc-all-results {
+  background-image: url('icon_all-complex-light-blue.gif');
+}
+
+.gsc-resultsHeader .gsc-configLabel{
+  color: #676767;
+  display: inline;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.gsc-resultsHeader td.gsc-configLabelCell span.gsc-twiddle-closed {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('icon_settings.gif');
+}
+
+
+/* SEARCH RESULTS FOR EACH SECTION */
+
+.gsc-resultsbox-visible {
+  display : block;
+}
+
+.gsc-resultsbox-invisible {
+  display : none;
+}
+
+.gsc-results {
+  padding-bottom: 2px;
+  width : 99%;
+}
+
+.gsc-result {
+  margin-bottom: 10px;
+}
+
+.gsc-result .gs-title {
+  height: 1.4em;
+  overflow: hidden;
+  }
+
+.gsc-result div.gs-watermark {
+  display: none;
+}
+
+
+/* PAGINATION LINKS BENEATH EACH SECTION */
+
+.gsc-results .gsc-trailing-more-results {
+  margin-bottom : 10px;
+}
+
+.gsc-results .gsc-trailing-more-results,
+.gsc-results .gsc-trailing-more-results * {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+.gsc-results .gsc-cursor-box .gsc-trailing-more-results {
+  margin-bottom : 0px;
+  display : inline;
+}
+
+.gsc-results .gsc-cursor {
+  display : inline;
+}
+
+.gsc-results .gsc-cursor-box {
+  margin-bottom : 10px;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  cursor : pointer;
+  color : #000000;
+  text-decoration: underline;
+  margin-right : 8px;
+  display : inline;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  color : #A90A08;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+
+
+/*** End of Control, Begin Results ***/
+
+.gs-result .gs-title,
+.gs-result .gs-title * {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+.gs-divider {
+  padding-bottom: 8px;
+  text-align: center;
+  color: #676767;
+}
+
+.gs-result a.gs-visibleUrl,
+.gs-result .gs-visibleUrl {
+  color: #008000;
+  text-decoration: none;
+}
+
+.gs-result a {
+  cursor: pointer;
+}
+
+.gs-result .gs-snippet {
+}
+
+.gs-no-results-result .gs-snippet,
+.gs-error-result .gs-snippet {
+  padding : 5px;
+  margin : 5px;
+  border : 1px solid rgb(255,204,51);
+  background-color : rgb(255,244,194);
+}
+
+.gs-result .gs-watermark{
+  font-size: 10px;
+  color: #7777cc;
+}
+
+div.gs-results-attribution {
+  text-align : center;
+  margin-bottom : 4px;
+}
+
+div.gs-results-attribution,
+div.gs-results-attribution * {
+  font-size : 10px;
+  color : #676767;
+  text-decoration : none;
+}
+
+div.gs-results-attribution a {
+  color: #0000cc;
+  cursor : pointer;
+}
+
+div.gs-results-attribution a:hover {
+  text-decoration : underline;
+}
+
+.gs-result .gs-metadata{
+  color: #676767;
+}
+ 
+div.gs-visibleUrl-short{ display: none; }
+.gs-webResult div.gs-visibleUrl-long {
+  width : 100%;
+  display: block;
+}

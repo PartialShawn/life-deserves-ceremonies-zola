@@ -1,0 +1,403 @@
+/* @group HTML Colours */
+
+a:link, a:visited {
+	color: #3C549D;
+}
+
+a:hover {
+	color: #990000;
+}
+
+a:active {
+	color: #3C549D;
+}
+
+h1 {
+	color: #333333;
+}
+
+h2 {
+	color: #333333;
+}
+
+h3 {
+	color: #333333;
+}
+
+h4 {
+	color: #333333;
+}
+
+h5 {
+	color: #333333;
+}
+
+h6 {
+	color: #333333;
+}
+
+blockquote, .standout {
+	background-color: #FFFFFF;
+	color: #333333;
+	border: 1px solid #E6E6E6;
+}
+
+code {
+	background-color: #FFFFFF;
+	color: #0000FF;
+	border: 1px solid #000000;
+}
+
+dl {
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+
+dt {
+	color: #FFFFFF;
+}
+
+dd {
+	color: #FFFFFF;
+}
+
+strike {
+	color: #FF0000;
+}
+
+ins {
+	color: #008000;
+}
+
+table {
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+}
+
+caption {
+	color: #333333;
+}
+
+th {
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+td {
+	color: #333333;
+}
+
+#contentContainer #content ul {
+	color: #333333;
+}
+
+#contentContainer #content li {
+	color: #333333;
+}
+
+/* @end */
+
+/* @group Layout Colours */
+
+body {
+	background-color: #FFFFFF;
+	color: #224A10;
+}
+
+#primaryNavigation .current,
+#primaryNavigation .current:hover {
+	color: #333333;
+}
+
+#primaryNavigation .currentAncestor {
+	color: #333333;
+}
+
+#primaryNavigation a {
+	color: #333333;
+	border-left: 1px solid #333333;
+}
+
+#primaryNavigation a:hover {
+	color: #224A10;
+}
+
+#pageHeader {
+	background-color: #6A6A6A;
+}
+
+#pageHeader h1 a {
+	color: #FFFFFF;
+}
+
+#pageHeader h1 a:hover {
+	color: #FFFFFF;
+}
+
+#pageHeader h2 {
+	color: #CCCCCC;
+}
+
+#container {
+	background-color: #FFFFFF;
+}
+
+#verticalNavigation .current, 
+#verticalNavigation .current:hover {
+	color: #FFFFFF;
+}
+
+#verticalNavigation .currentAncestor,
+#verticalNavigation .currentAncestor:hover {
+	color: #FFFFFF;
+}
+
+#verticalNavigation a:hover {
+	color: #224A10;
+}
+
+#verticalNavigation a {
+	color: #333333;
+}
+
+#sideTitleOuter {
+	background: #E6E6E6;
+}
+
+#navOuter, verticalNavigation {
+	background-color: #E6E6E6;
+}
+
+#sidebarBodyOuter {
+	background-color: #FFFFFF;
+}
+
+#footerContainer, #footerWrapper {
+	background-color: #FFFFFF;
+}
+
+#footer {
+	color: #224A10;
+}
+
+#footer a:link {
+	color: #3C549D;
+}
+
+#footer a:hover {
+	color: #990000;
+}
+
+#sidebarContainer .sideHeader {
+	background-color: #E6E6E6;
+	color: #333333;
+}
+
+#sidebarContainer #sidebar, #sidebarBodyOuter {
+	color: #224A10;
+	background-color: #FFFFFF;
+}
+
+#breadcrumbcontainer li, #breadcrumbcontainer {
+	color: #B3B3B3;
+}
+
+#breadcrumbcontainer a {
+	color: #224A10;
+}
+
+#breadcrumbcontainer a:hover {
+	color: #990000;
+}
+
+/* @end */
+
+/* @group Page Colours */
+
+.blog-entry-title, .blog-entry-title a {
+	color: #333333;
+}
+
+.blog-entry-title, .blog-entry-title a:hover {
+	color: #0000FF;
+}
+
+.blog-entry-date {
+	color: #333333;
+}
+
+.blog-read-more a {
+	color: #333333;
+}
+
+.blog-read-more a:hover {
+	color: #0000FF;
+}
+
+.blog-entry-tags a:link {
+	color: #333333;
+}
+
+.blog-entry-tags a:hover {
+	color: #0000FF;
+}
+
+.blog-entry-comments a {
+	color: #333333;
+}
+
+.blog-entry-comments a:hover {
+	color: #0000FF;
+}
+
+.blog-entry-category {
+	color: #333333;
+}
+
+.blog-entry-category a:link {
+	color: #333333;
+}
+
+.blog-entry-category a:hover {
+	color: #0000FF;
+}
+
+#blog-archives a {
+	color: #333333;
+}
+
+#blog-archives a:hover {
+	color: #0000FF;
+}
+
+#blog-rss-feeds {
+	
+}
+
+#blog-rss-feeds a {
+	color: #FF6600;
+}
+
+#blog-rss-feeds a:hover {
+	color: #FF6600;
+}
+
+.blog-tag-cloud {
+	
+}
+
+ul.blog-tag-cloud a {
+	color: #0000FF;
+}
+
+ul.blog-tag-cloud a:hover {
+	color: #0000FF;
+}
+
+.filesharing-description {
+	color: #333333;
+}
+
+.filesharing-item-title a:link {
+	color: #0000FF;
+}
+
+.filesharing-item-title a:hover {
+	color: #0000FF;
+}
+
+.filesharing-item-description {
+	color: #333333;
+}
+
+.album-title {
+	color: #333333;
+}
+
+.album-description {
+	color: #333333;
+}
+
+.thumbnail-frame img {
+	border: 1px solid #FFFFFF;
+}
+
+.thumbnail-caption {
+	color: #333333;
+}
+
+.photo-background {
+	background-color: #E6E6E6;
+}
+
+.photo-title {
+	color: #333333;
+	background-color: #E6E6E6;
+}
+
+.photo-caption {
+	color: #333333;
+	background-color: #E6E6E6;
+}
+
+.photo-frame {
+	border: 1px solid #FFFFFF;
+}
+
+.photo-navigation {
+	background-color: #E6E6E6;
+	border-bottom: 15px solid #E6E6E6;
+}
+
+.photo-navigation a:link {
+	color: #333333;
+}
+
+.photo-navigation a:hover {
+	color: #0000FF;
+}
+
+.exif-data {
+	color: #333333;
+	background-color: #E6E6E6;
+}
+
+.movie-page-title {
+	color: #333333;
+}
+
+.movie-page-description {
+	color: #333333;
+}
+
+.movie-thumbnail-frame img {
+	border: 1px solid #FFFFFF;
+}
+
+.movie-thumbnail-caption {
+	color: #333333;
+}
+
+.movie-description {
+	color: #333333;
+}
+
+form {
+	color: #333333;
+}
+
+.message-text {
+	color: #333333;
+}
+
+.form-input-field {
+	color: #333333;
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+}
+
+.label {
+	color: #333333;
+}
+
+/* @end */

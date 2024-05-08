@@ -1,0 +1,15 @@
+#navOuter {
+	display: none;
+}
+
+#verticalNavigation {
+	display: none;
+}
+
+.spacer2 {
+	height: 15px;
+}
+
+.sidebarSpacer {
+	display: none;
+}

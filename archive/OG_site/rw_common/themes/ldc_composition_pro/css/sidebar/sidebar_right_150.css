@@ -1,0 +1,21 @@
+#sidebarContainer {
+	float: right;
+	width: 150px;
+}
+
+#sideTitleOuter {
+	width: 150px;
+}
+
+#navOuter {
+	width: 150px;
+}
+
+#sidebarBodyOuter{
+	width: 150px;
+	float: right;
+}
+
+#content {
+	margin-right: 165px;
+}
