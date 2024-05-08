@@ -30,8 +30,9 @@
                 src="{{ config.base_url | safe }}/ldc_header.jpg" /></a>
     </header>
     <main>
-        <nav>
+        {% if 1 is 2 %}
         {% if page.toc %}
+        <nav>
         <ul>
         {% for h1 in page.toc %}
             <li>
@@ -46,13 +47,13 @@
             </li>
         {% endfor %}
         </ul>
-        {% endif %}
         </nav>
+        {% endif %}
+        {% endif %}
 
         {% block content %}{% endblock %}
         
     </main>
-    {{ __tera_context }}
     <footer>
         <p>613-206-4818 ~ <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
     </footer>
