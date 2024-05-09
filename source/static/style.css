@@ -9,8 +9,8 @@ header {
 
 header nav img {
     border-radius: 50px 50px 0px 0px;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 
@@ -108,6 +108,7 @@ div.faq-question {
     font-weight: bold;
     margin-top: 0em;
 }
+
 
 
 
@@ -234,4 +235,13 @@ form input.submit {
     width: 75px;
     word-spacing: 0px;
     writing-mode: lr-tb;
+}
+
+
+@media (min-width: 600px) {
+    div.col2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
 }
