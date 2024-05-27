@@ -4,36 +4,40 @@ title = "Services"
 Services
 ========
 
-[Services](services)
+<div id="pageChildren" class="pageChildren services"><div id="child_menu">
 
-[Child Ceremonies](child-ceremonies)
+- [Services](#services)
+  - [Types of Wedding Ceremonies](#types-of-wedding-ceremonies)
+    - [Planning Process](#planning-process)
+    - [Legal Elements](#legal-elements)
+    - [Other Optional Services](#other-optional-services)
+  - [Child Ceremonies](#child-ceremonies)
+  - [Milestone Ceremonies](#milestone-ceremonies)
+  - [Pre-Marital Program](#pre-marital-program)
 
-[Milestone Ceremonies](milestone-ceremonies)
-
-[Pre-Marital Program](pre-marital-program)
+</div></div>
 
 Thank you for your interest in my services. I believe that there are many things in life that can be celebrated through ceremony. On this page you will find information about wedding ceremonies, but I also perform [child ceremonies](http://lifedeservesceremonies.com/services/child-ceremonies/) and [life milestone ceremonies](http://lifedeservesceremonies.com/services/milestone-ceremonies/). I invite you to look through the description of the services and to contact me to see how we can develop a ceremony that suits your individual needs.
 
 **![Wedding shot down an aisle.](http://lifedeservesceremonies.com/data/uploads/images/wedding8.jpg)Wedding Ceremonies**
 
-## Types of Wedding Ceremonies:
+## Types of Wedding Ceremonies
 
 I can marry you in as many ways as two people can be married and will do my best to help you create a specialized ceremony. I can perform small or large ceremonies and can accommodate you based on your needs. You choose your own special time, place and style.
 
-### Planning Process:
+### Planning Process
 
 The process of planning a wedding involves many elements to consider. My primary objective is to support you in planning the perfect ceremony for your special day. To do this I am available for consultation by email, phone, or Skype at any time leading up to the ceremony. Please contact me to see if I am available for your wedding place, date and time. We can set up a consultation so that I can get a sense of who you are and the traditions that you hold dear. Once you decide to work with me, I will ask you to complete some paperwork and provide a deposit (cash, cheque, or bank transfer). I will provide you with a package of sample ceremonies for you to consider. These are only examples as we can draw on the greatest traditions of your families, create new traditions and a truly personalized ceremony that you will always remember.
 
 For example, please see the video of Erin and Steve's wedding.
 
-### Legal Elements:
+### Legal Elements
 
 As your Officiant I'm licensed to perform legal marriages in the Province of Ontario and the services I perform are secular and nonreligious in nature. It is my duty to pronounce you married and ensure that your Marriage Licence (Something you obtain. See [Q & A](http://lifedeservesceremonies.com/qa/)) and the Marriage Registrar (Something I bring) are complete. I also mail your Marriage Licence to the government.
 
-### Other Optional Services:
+### Other Optional Services
 
 I have over twenty years combined experience counseling and specialization in marriage preparation. Along with being a Humanist Officiant, I'm also a Registered Social Service Worker and a university Lecturer for Introduction to Sociology, and the Sociology of Child, Youth, Aging, Health, Justice, and Crime and Punishment. I offer an optional premarital preparation course that helps couples identify and work with their individual strengths to continuously develop their relationship. If you are interested, please ask me for more details about this course during our consultation or at anytime before or after you are married.
-
 
 
 ## Child Ceremonies
