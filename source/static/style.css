@@ -33,9 +33,12 @@ footer {
 }
 
 
-main nav {
 
+main nav p {
+    border-bottom: solid 1px white;
+    font-weight: bold;
 }
+
 
 
 a:any-link {
@@ -65,15 +68,6 @@ header nav a:any-link {
 
 
 
-main nav {
-    float: right;
-    padding: 5px;
-    margin-left: 1em;
-    border: dotted 2px white;
-    background-color: rgb(34, 74, 16);
-}
-
-
 
 
 main nav a:any-link {
@@ -93,7 +87,11 @@ h1 {
     font-weight: normal;
 }
 
-
+aside {
+    float: right;
+    margin: 1em;
+    clear: both;
+}
 
 div#faq-header {
     border-bottom: solid 1px black;
@@ -252,11 +250,6 @@ form input.submit {
         margin-left: 1em;
         border: dotted 2px white;
         background-color: rgb(34, 74, 16);
-    }
-
-    main nav p {
-        border-bottom: solid 1px white;
-        font-weight: bold;
     }
 
     /* index */

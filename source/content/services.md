@@ -6,11 +6,12 @@ Services
 
 <nav>
     <p>Services</p>
-    
-- [Types of Wedding Ceremonies](#types-of-wedding-ceremonies)
-- [Planning Process](#planning-process)
-- [Legal Elements](#legal-elements)
-- [Other Optional Services](#other-optional-services)
+
+- [Wedding Ceremonies](#wedding-ceremonies)
+  - [Types of Wedding Ceremonies](#types-of-wedding-ceremonies)
+  - [Planning Process](#planning-process)
+  - [Legal Elements](#legal-elements)
+  - [Other Optional Services](#other-optional-services)
 - [Child Ceremonies](#child-ceremonies)
 - [Milestone Ceremonies](#milestone-ceremonies)
 - [Pre-Marital Program](#pre-marital-program)
@@ -19,9 +20,15 @@ Services
 
 Thank you for your interest in my services. I believe that there are many things in life that can be celebrated through ceremony. On this page you will find information about wedding ceremonies, but I also perform [child ceremonies](http://lifedeservesceremonies.com/services/child-ceremonies/) and [life milestone ceremonies](http://lifedeservesceremonies.com/services/milestone-ceremonies/). I invite you to look through the description of the services and to contact me to see how we can develop a ceremony that suits your individual needs.
 
-**![Wedding shot down an aisle.](http://lifedeservesceremonies.com/data/uploads/images/wedding8.jpg)Wedding Ceremonies**
+<aside>
 
-## Types of Wedding Ceremonies
+![Wedding shot down an aisle.](http://lifedeservesceremonies.com/data/uploads/images/wedding8.jpg)
+
+</aside>
+
+## Wedding Ceremonies
+
+### Types of Wedding Ceremonies
 
 I can marry you in as many ways as two people can be married and will do my best to help you create a specialized ceremony. I can perform small or large ceremonies and can accommodate you based on your needs. You choose your own special time, place and style.
 
