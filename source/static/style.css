@@ -68,7 +68,11 @@ header nav a:any-link {
 
 
 
-
+main nav {
+    padding: 5px;
+    border: dotted 2px white;
+    background-color: rgb(34, 74, 16);
+}
 
 main nav a:any-link {
     color: white;
@@ -78,6 +82,16 @@ main nav a:any-link {
 main nav p {
     margin: 0px;
     padding: 0px;
+    color: white;
+}
+
+main nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main nav > ul ul {
+    padding-left: 1em;
 }
 
 
@@ -246,10 +260,7 @@ form input.submit {
     /* services, sub pages */
     main nav {
         float: right;
-        padding: 5px;
         margin-left: 1em;
-        border: dotted 2px white;
-        background-color: rgb(34, 74, 16);
     }
 
     /* index */
