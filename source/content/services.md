@@ -4,18 +4,18 @@ title = "Services"
 Services
 ========
 
-<div id="pageChildren" class="pageChildren services"><div id="child_menu">
+<nav>
+    <p>Services</p>
+    
+- [Types of Wedding Ceremonies](#types-of-wedding-ceremonies)
+- [Planning Process](#planning-process)
+- [Legal Elements](#legal-elements)
+- [Other Optional Services](#other-optional-services)
+- [Child Ceremonies](#child-ceremonies)
+- [Milestone Ceremonies](#milestone-ceremonies)
+- [Pre-Marital Program](#pre-marital-program)
 
-- [Services](#services)
-  - [Types of Wedding Ceremonies](#types-of-wedding-ceremonies)
-    - [Planning Process](#planning-process)
-    - [Legal Elements](#legal-elements)
-    - [Other Optional Services](#other-optional-services)
-  - [Child Ceremonies](#child-ceremonies)
-  - [Milestone Ceremonies](#milestone-ceremonies)
-  - [Pre-Marital Program](#pre-marital-program)
-
-</div></div>
+</nav>
 
 Thank you for your interest in my services. I believe that there are many things in life that can be celebrated through ceremony. On this page you will find information about wedding ceremonies, but I also perform [child ceremonies](http://lifedeservesceremonies.com/services/child-ceremonies/) and [life milestone ceremonies](http://lifedeservesceremonies.com/services/milestone-ceremonies/). I invite you to look through the description of the services and to contact me to see how we can develop a ceremony that suits your individual needs.
 

@@ -33,7 +33,9 @@ footer {
 }
 
 
+main nav {
 
+}
 
 
 a:any-link {
@@ -239,7 +241,25 @@ form input.submit {
 }
 
 
+
+
 @media (min-width: 600px) {
+    
+    /* services, sub pages */
+    main nav {
+        float: right;
+        padding: 5px;
+        margin-left: 1em;
+        border: dotted 2px white;
+        background-color: rgb(34, 74, 16);
+    }
+
+    main nav p {
+        border-bottom: solid 1px white;
+        font-weight: bold;
+    }
+
+    /* index */
     div.col2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
