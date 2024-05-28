@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% block head %}
-    {% endblock head %}
+    {% block head %}{% endblock head %}
     {% block head_title %}<title>Life Deserves Ceremonies</title>{% endblock head_title %}
     {% block head_meta %}<meta name="description" content="Suzanne Peters is a Humanist officiant performing non-religious ceremonies near Perth, Ontario." />{% endblock head_meta %}
 </head>
@@ -20,7 +19,7 @@
                 <li><a href="{{ config.base_url | safe }}/">Home</a></li>
                 <li><a href="{{ config.base_url | safe }}/about-me/">About Me</a></li>
                 <li><a href="{{ config.base_url | safe }}/services/">Services</a></li>
-                <li>Photo Gallery</li>
+                <!-- <li>Photo Gallery</li> -->
                 <li><a href="{{ config.base_url | safe }}/contact-me/">Contact Me</a></li>
                 <li><a href="{{ config.base_url | safe }}/qa/">Q&amp;A</a></li>
             {% endblock nav %}</ul>
@@ -60,6 +59,7 @@
             <a href="tel:613-206-4818">613-206-4818</a> | 
             <a href="mailto:suzanne@lifedeservesceremonies.com">email</a></p>
     </footer>
+    <script type="text/javascript">/* FOUC fix */</script>    
 </body>
 
 </html>
