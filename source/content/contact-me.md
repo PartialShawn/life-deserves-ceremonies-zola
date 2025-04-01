@@ -8,30 +8,31 @@ If you are planning an upcoming ceremony — or have some questions in general 
 
 613-206-4818 ~ [suzanne@lifedeservesceremonies.com](mailto:suzanne@lifedeservesceremonies.com)
 
-<form action="#p01-contact1" autocomplete="off" id="p01-contact1" class="p01-contact" method="post">
+<form action="https://formspree.io/f/xjkyeezy" autocomplete="off" method="post">
     <div class="field text">
-        <div class="label"><label for="p01-contact1_field0">Name <strong style="color:red">*</strong></label></div>
-        <input id="p01-contact1_field0" name="p01-contact_fields[0]" type="text" value="" />
+        <div class="label"><label for="name">Name <strong style="color:red">*</strong></label></div>
+        <input id="name" name="name" type="text" value="" />
     </div>
     <div class="field text">
-        <div class="label"><label for="p01-contact1_field1">Email <strong style="color:red">*</strong></label></div>
-        <input id="p01-contact1_field1" name="p01-contact_fields[1]" type="text" value="" />
+        <div class="label"><label for="email">Email <strong style="color:red">*</strong></label></div>
+        <input id="email" name="email" type="text" value="" />
     </div>
     <div class="field text">
-        <div class="label"><label for="p01-contact1_field2">Subject <strong style="color:red">*</strong></label></div>
-        <input id="p01-contact1_field2" name="p01-contact_fields[2]" type="text" value="" />
+        <div class="label"><label for="subject">Subject <strong style="color:red">*</strong></label></div>
+        <input id="subject" name="subject" type="text" value="" />
     </div>
     <div class="field text">
-        <div class="label"><label for="p01-contact1_field3">Time &amp; Date if known</label></div>
+        <div class="label"><label for="date">Time &amp; Date if known</label></div>
         <input id="p01-contact1_field3" name="p01-contact_fields[3]" type="text" value="" />
     </div>
     <div class="field text">
-        <div class="label"><label for="p01-contact1_field4">Venue &amp; Address if known</label></div>
-        <input id="p01-contact1_field4" name="p01-contact_fields[4]" type="text" value="" />
+        <div class="label"><label for="venue">Venue &amp; Address if known</label></div>
+        <input id="venue" name="venue" type="text" value="" />
     </div>
     <div class="field textarea">
-        <div class="label"><label for="p01-contact1_field5">Message <strong style="color:red">*</strong></label></div>
-        <textarea id="p01-contact1_field5" rows="10" name="p01-contact_fields[5]"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <div class="label"><label for="message">Message <strong style="color:red">*</strong></label></div>
+        <textarea id="message" rows="10" name="message"></textarea>
     </div>
     <div>
         <input class="submit" type="submit" value="Send" />
